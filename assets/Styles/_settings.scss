@@ -1,0 +1,50 @@
+// ....................FONTS.....................
+@font-face {
+    font-family: "Allura";
+    src: url(../font/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Light.ttf);
+}
+//.........Variables............................
+$font1: Allura, cursive;
+$font2: Poppins, serif;
+$font3: Roboto, serif;
+$white: #eee;
+$black: #21201e;
+$grey: rgb(182, 182, 182);
+$gold: rgb(166, 114, 69);
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  body {
+    text-align: center;
+    font-family: $font3;
+    background: $black;
+  }

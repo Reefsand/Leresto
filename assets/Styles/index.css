@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, serif;
+  background: #21201e;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  color: #eee;
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */
