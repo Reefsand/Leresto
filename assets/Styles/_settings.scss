@@ -48,3 +48,10 @@ $gold: rgb(166, 114, 69);
     font-family: $font3;
     background: $black;
   }
+  h2{
+    color: $gold;
+    text-transform: capitalize;
+    font-family: $font1;
+    font-size: 2.5rem;
+    font-weight: 100;
+  }

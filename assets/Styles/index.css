@@ -27,6 +27,14 @@ body {
   background: #21201e;
 }
 
+h2 {
+  color: rgb(166, 114, 69);
+  text-transform: capitalize;
+  font-family: Allura, cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
   color: #eee;
@@ -168,4 +176,60 @@ header .view h6 {
   letter-spacing: 10px;
   font-size: 1rem;
   font-weight: 100;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+}
+@media screen and (max-width: 850px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+}
+.section1 .our-store {
+  margin: 15px;
+  border: dashed 1px rgb(166, 114, 69);
+}
+.section1 .our-store h2 {
+  padding-top: 30px;
+}
+.section1 .our-store h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: Poppins, serif;
+  font-weight: bold;
+  margin-top: -20px;
+}
+.section1 .our-store img:nth-of-type(1) {
+  margin: 30px 0;
+}
+.section1 .our-store p {
+  padding: 0 20px;
+}
+.section1 .our-store img:nth-of-type(2) {
+  height: 90px;
+  border-radius: 50px;
+  margin: 30px 0 5px;
+}
+.section1 .our-store h4 {
+  font-family: Poppins, serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.section1 .our-store h5 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: rgb(182, 182, 182);
+  margin-bottom: 30px;
+}
+.section1 .store {
+  background: url(../img/store-01.jpg) center/cover;
+}
+@media screen and (max-width: 850px) {
+  .section1 .store {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
