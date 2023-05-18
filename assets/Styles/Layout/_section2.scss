@@ -1,0 +1,107 @@
+.section2{
+    background: url(../img/bg-menu-01.jpg) bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    @media screen and (max-width: 850px) {
+        background-size: auto;
+      }
+    
+    h2{
+        margin-top: 40px;
+    }
+    #plate {
+        margin: 20px;
+    }
+    ul{
+        @include alignChildren(space-around);
+        color: $grey;
+        max-width: 55vw;
+        margin: 0 auto 40px auto;
+        @media screen and (max-width: 850px) {
+            max-width: 85vw;
+          }
+        
+        li{
+            position: relative;
+            text-transform: capitalize;
+            cursor: pointer;
+            &::after{
+                content: "";
+                background: $grey;
+                height: 1px; width: 100%;
+                position: absolute;
+                transform: translateX(-100%);
+                bottom: -10px;
+            }
+        }
+        
+    }
+    .dishes{
+        width: 55vw;
+        margin: 10px auto;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: $white;
+        border-top: solid $gold 4px;
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 1fr;
+            width: 85vw;
+          }
+        
+        img{
+            border-radius: 50px;
+            width: 100%;
+            @media screen and (max-width: 850px) {
+                width: 60%;
+                border-radius: 80px;
+              }
+              @media screen and (max-width: 550px) {
+                width: 100%;
+              }
+        }
+        .dish-part{
+            display: grid;
+            grid-template-columns: 25% 60% 15%;
+            margin: 25px 10px 0px 15px;
+            padding-bottom: 25px;
+            align-items: center;
+            border-bottom: dashed $grey 1px;
+            .dish-explain{
+                text-align: left;
+                padding-left: 10px;
+                h6{
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    padding-bottom: 5px;
+                    @media screen and (max-width: 1250px) {
+                        font-size: 0.8rem;
+                      }
+                      @media screen and (max-width: 850px) {
+                        font-size: 1rem;
+                      }
+                }
+                p{
+                    @media screen and (max-width: 1250px) {
+                        font-size: 0.8rem;
+                      }
+                      @media screen and (max-width: 850px) {
+                        font-size: 1rem;
+                      }
+                }
+            }
+            h5{
+                color: $gold;
+                font-size: 1.2rem;
+                @media screen and (max-width: 1250px) {
+                    font-size: 1rem;
+                  }
+                  @media screen and (max-width: 850px) {
+                    font-size: 1.4rem;
+                  }
+            }
+        }
+    }
+
+}

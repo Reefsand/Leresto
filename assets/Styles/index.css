@@ -232,4 +232,139 @@ header .view h6 {
   .section1 .store {
     display: none;
   }
+}
+
+.section2 {
+  background: url(../img/bg-menu-01.jpg) bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 850px) {
+  .section2 {
+    background-size: auto;
+  }
+}
+.section2 h2 {
+  margin-top: 40px;
+}
+.section2 #plate {
+  margin: 20px;
+}
+.section2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: rgb(182, 182, 182);
+  max-width: 55vw;
+  margin: 0 auto 40px auto;
+}
+@media screen and (max-width: 850px) {
+  .section2 ul {
+    max-width: 85vw;
+  }
+}
+.section2 ul li {
+  position: relative;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.section2 ul li::after {
+  content: "";
+  background: rgb(182, 182, 182);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  bottom: -10px;
+}
+.section2 .dishes {
+  width: 55vw;
+  margin: 10px auto;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+  border-top: solid rgb(166, 114, 69) 4px;
+}
+@media screen and (max-width: 850px) {
+  .section2 .dishes {
+    grid-template-columns: 1fr;
+    width: 85vw;
+  }
+}
+.section2 .dishes img {
+  border-radius: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 850px) {
+  .section2 .dishes img {
+    width: 60%;
+    border-radius: 80px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section2 .dishes img {
+    width: 100%;
+  }
+}
+.section2 .dishes .dish-part {
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  margin: 25px 10px 0px 15px;
+  padding-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: dashed rgb(182, 182, 182) 1px;
+}
+.section2 .dishes .dish-part .dish-explain {
+  text-align: left;
+  padding-left: 10px;
+}
+.section2 .dishes .dish-part .dish-explain h6 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 1250px) {
+  .section2 .dishes .dish-part .dish-explain h6 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section2 .dishes .dish-part .dish-explain h6 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .section2 .dishes .dish-part .dish-explain p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section2 .dishes .dish-part .dish-explain p {
+    font-size: 1rem;
+  }
+}
+.section2 .dishes .dish-part h5 {
+  color: rgb(166, 114, 69);
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1250px) {
+  .section2 .dishes .dish-part h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section2 .dishes .dish-part h5 {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=index.css.map */
