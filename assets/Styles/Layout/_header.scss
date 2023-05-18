@@ -1,6 +1,123 @@
 header { 
     background: url(../img/bg-slider-06.jpg) center/cover;
     color: $white;
-    min-height: 100vh;
+    min-height: 100vh; 
+
+    nav{
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    
+    @media screen and (max-width: 1200px) {
+        max-width: 90%;
+    }
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 15% 70% 15%;
+      }
+      @media screen and (max-width: 680px) {
+        grid-template-columns: 50% 10% 40%;
+    
+      }
+
+        span{
+        font-family: $font1;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: left;
+        @media screen and (max-width: 680px){
+            font-size: 2.8rem;
+            text-align: center;
+        }
+        }
+
+        ul{
+            @include alignChildren(space-around); 
+            @media screen and (max-width: 680px){
+                visibility: hidden;
+            }
+            li{
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            display: block;
+            position: relative;
+            
+             &:first-child::after{
+                position: absolute;
+                content:"";
+                background: $white;
+                height: 2px; width: 100%;
+                top: 22px;
+                transform:translateX(-100%)  
+                }
+             &:hover::after{
+                position: absolute;
+                content:"";
+                background: $white;
+                height: 2px; width: 100%;
+                top: 22px;
+                transform:translateX(-100%) ;
+             }
+            }
+        
+        }
+        .nav-icons{
+             i{
+            padding: 5px;
+            @media screen and (max-width: 680px){
+                padding: 15px;
+            }
+                 &:hover{
+                scale: 1.5;
+                transition: 0.3ms ease;
+                cursor: pointer;
+                }
+             }
+        }
+    }
+    
+    .view{
+        margin-top: 150px;
+        height: 88vh;
+        
+        h2{
+            font-family: $font1;
+            font-weight: 100;
+            color: $gold;
+            font-size: 4rem;
+            text-transform: capitalize;
+            @media screen and (max-width: 680px){
+                font-size: 2.2rem;
+                text-align: center;
+            }
+        }
+        h1{
+            margin-top: -30px;
+            font-family: $font2;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: 4rem;
+            @media screen and (max-width: 680px){
+                font-size: 2.8rem;
+                margin-top: 0px;
+               
+            }
+        }
+        img{
+            scale: 0.8;
+            margin: 30px 0 60px;
+        }
+        h6{
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: 1rem;
+            font-weight: 100;
+        }
+
+    }
     
 }
