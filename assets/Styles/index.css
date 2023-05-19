@@ -471,4 +471,159 @@ header .view h6 {
           transform: translateX(3px);
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
+}
+
+.section4 {
+  max-width: 1150px;
+  margin: 0 auto 100px;
+}
+@media screen and (max-width: 680px) {
+  .section4 {
+    display: none;
+  }
+}
+.section4 h3 {
+  font-family: Poppins, serif;
+  font-size: 1.8rem;
+  color: #eee;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+.section4 img {
+  height: 25px;
+  width: 25px;
+  margin: 20px;
+}
+.section4 .event-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-row: 1fr 1fr;
+  grid-template-areas: "a c" "b c";
+  gap: 20px;
+}
+.section4 .event-grid .event-partA, .section4 .event-grid .event-partB {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding-left: 15px;
+}
+.section4 .event-grid .event-partA .event-part-R, .section4 .event-grid .event-partB .event-part-R {
+  background: #eee;
+  text-align: left;
+  padding: 30px 20px 40px;
+}
+.section4 .event-grid .event-partA .event-part-R h5, .section4 .event-grid .event-partB .event-part-R h5 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.section4 .event-grid .event-partA .event-part-R p, .section4 .event-grid .event-partB .event-part-R p {
+  color: rgb(182, 182, 182);
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+.section4 .event-grid .event-partA .event-part-R h6, .section4 .event-grid .event-partB .event-part-R h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.section4 .event-grid .event-partA {
+  grid-area: a;
+}
+.section4 .event-grid .event-partA .event-part-L {
+  background: url(../img/event-01.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section4 .event-grid .event-partB {
+  grid-area: b;
+}
+.section4 .event-grid .event-partB .event-part-L {
+  background: url(../img/event-02.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section4 .event-grid .even-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  width: 80px;
+  background: #21201e;
+  color: #eee;
+}
+.section4 .event-grid .even-date h4 {
+  font-size: 1.8rem;
+}
+.section4 .event-grid .even-date span {
+  font-size: 1.2rem;
+}
+.section4 .event-grid .event-right {
+  grid-area: c;
+  background: url(../img/event-03.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section4 .event-grid .event-right .event-part3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+  width: 90%;
+  background: #eee;
+}
+.section4 .event-grid .event-right .event-part3 h5 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0px 40px;
+}
+.section4 .event-grid .event-right .event-part3 p {
+  color: rgb(182, 182, 182);
+  letter-spacing: 2px;
+  margin-top: -30px;
+}
+.section4 .event-grid .event-right .event-part3 h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=index.css.map */

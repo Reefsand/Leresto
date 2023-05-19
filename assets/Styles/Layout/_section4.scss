@@ -1,0 +1,123 @@
+.section4{
+    max-width: 1150px;
+    margin: 0 auto 100px;
+    @media screen and (max-width: 680px) {
+        display: none;
+      }
+
+    h3{
+        font-family: $font2;
+        font-size: 1.8rem;
+        color: $white;
+        text-transform: uppercase;
+        margin-top:-10px ;
+    }
+    img{
+        height: 25px; width: 25px;
+        margin: 20px;
+    }
+
+    .event-grid{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-row: 1fr 1fr;
+        grid-template-areas:
+        "a c"
+        "b c";
+        gap: 20px;
+        
+            .event-partA, .event-partB{
+            display: grid;
+            grid-template-columns: 35% 65%;
+            padding-left: 15px;
+           
+            .event-part-R{
+                background: $white;
+                text-align: left;
+                padding:30px 20px 40px;
+                h5{
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+                p{
+                    color: $grey;
+                    padding:20px 0;
+                    letter-spacing: 2px;
+                }
+                h6{
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                }
+            }
+            }
+         .event-partA {
+            grid-area: a;
+            .event-part-L{
+                background: url(../img/event-01.jpg) center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+            }
+            .event-partB {
+                grid-area: b;
+                .event-part-L{
+                    background: url(../img/event-02.jpg) center/cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                }
+            .even-date{
+                    @include childCenter;
+                    flex-direction: column;
+                    height: 80px; width: 80px;
+                    background: $black;
+                    color: $white;
+                    h4{
+                        font-size: 1.8rem;
+                    }
+                    span{
+                        font-size: 1.2rem;
+                    }
+                }
+        
+        .event-right{
+            grid-area: c;
+            background: url(../img/event-03.jpg);
+            @include childCenter;
+            .event-part3{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 90%; width: 90%;
+                background: $white;
+                h5{
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    padding: 0px 40px ;
+                }
+                p{
+                    color: $grey;
+                    letter-spacing: 2px;
+                    margin-top: -30px;
+                }
+                h6{
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    letter-spacing: 2px; 
+                    margin-bottom: 50px;
+                    
+                }
+
+            }
+        }
+           
+            
+    }
+
+      
+}
+    
