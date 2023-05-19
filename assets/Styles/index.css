@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(../font/Allura-Regular.ttf);
@@ -495,16 +496,16 @@ header .view h6 {
   margin: 20px;
 }
 .section4 .event-grid {
+  padding: 0 15px;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-row: 1fr 1fr;
   grid-template-areas: "a c" "b c";
-  gap: 20px;
+  gap: 20px 0;
 }
 .section4 .event-grid .event-partA, .section4 .event-grid .event-partB {
   display: grid;
   grid-template-columns: 35% 65%;
-  padding-left: 15px;
 }
 .section4 .event-grid .event-partA .event-part-R, .section4 .event-grid .event-partB .event-part-R {
   background: #eee;
@@ -582,7 +583,8 @@ header .view h6 {
 }
 .section4 .event-grid .event-right {
   grid-area: c;
-  background: url(../img/event-03.jpg);
+  background: url(../img/event-03.jpg) center/cover;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,4 +628,60 @@ header .view h6 {
   font-size: 1rem;
   letter-spacing: 2px;
   margin-bottom: 50px;
+}
+
+.section5 {
+  padding: 0px 15px;
+  position: relative;
+}
+.section5::before {
+  content: "";
+  height: 350px;
+  width: 100%;
+  background: url(../img/gmap.jpg) center/cover;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -200px;
+}
+.section5 .quote-container {
+  z-index: 2;
+  background: #eee;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+.section5 .quote-container::before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -25px;
+}
+.section5 .quote-container .text-container {
+  padding: 60px 40px 30px 40px;
+}
+.section5 .quote-container .text-container:before {
+  content: "❝";
+}
+.section5 .quote-container .text-container:after {
+  content: "❞";
+}
+.section5 .quote-container .text-container:before, .section5 .quote-container .text-container:after {
+  font-size: 1.5rem;
+}
+.section5 .quote-container h3 {
+  font-weight: 100;
+}
+.section5 .quote-container p {
+  color: rgb(166, 114, 69);
+  padding: 20px 0 50px;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */

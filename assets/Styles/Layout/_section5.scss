@@ -1,0 +1,56 @@
+.section5{
+    padding: 0px 15px;
+    position: relative;
+    &::before{
+        content: "";
+        height: 350px; width: 100%;
+        background: url(../img/gmap.jpg) center/cover;
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: -200px;
+        
+    }
+        
+    .quote-container{
+        z-index: 2;
+        background: $white;
+        max-width: 1120px;
+        margin: 0 auto;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background: url(../img/avatar-02.jpg) center/cover;
+            height: 50px; width: 50px;
+            border-radius: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -25px;
+        }
+        
+        .text-container{
+            padding: 60px 40px 30px 40px;
+           
+            
+            &:before {
+                content: "❝";
+              }
+              &:after {
+                content: "❞";
+              }
+              &:before,
+              &:after {
+                font-size: 1.5rem;
+              }
+        }
+        h3{
+            font-weight: 100;
+        }
+        p{
+            color: $gold;
+            padding: 20px 0 50px;
+            font-size: 0.8rem;
+        }
+    }
+
+}

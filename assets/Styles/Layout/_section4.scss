@@ -18,18 +18,19 @@
     }
 
     .event-grid{
+        padding: 0 15px;
         display: grid;
         grid-template-columns: 60% 40%;
         grid-row: 1fr 1fr;
         grid-template-areas:
         "a c"
         "b c";
-        gap: 20px;
+        gap: 20px 0;
         
             .event-partA, .event-partB{
             display: grid;
             grid-template-columns: 35% 65%;
-            padding-left: 15px;
+            
            
             .event-part-R{
                 background: $white;
@@ -85,7 +86,8 @@
         
         .event-right{
             grid-area: c;
-            background: url(../img/event-03.jpg);
+            background: url(../img/event-03.jpg) center/cover;
+            margin-left: 20px;
             @include childCenter;
             .event-part3{
                 display: flex;
